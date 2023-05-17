@@ -5,23 +5,34 @@
       <div class="topbar">
         <div class="nav">
           <ul>
-            <li>
-              <!-- 晚点可以考虑增加 @click="emitLogin" -->
-              <el-button type="text">登录</el-button>
+            <li v-if="!this.$store.getters.getUser">
+              <el-button type="text" @click="login">登录</el-button>
               <span class="sep">|</span>
               <el-button type="text" @click="register = true">注册</el-button>
             </li>
-            <li>
-              <a>我的订单</a>
+            <li v-else>
+              欢迎
+              <!-- 弹出框 -->
+              <el-popover placement="top" width="180" v-model="visible">
+                <p>确定退出登录吗？</p>
+                <div style="text-align: right; margin: 10px 0 0">
+                  <el-button size="mini" type="text" @click="visible = false">取消</el-button>
+                  <el-button type="primary" size="mini" @click="logout">确定</el-button>
+                </div>
+                <el-button type="text" slot="reference">{{this.$store.getters.getUser.userName}}</el-button>
+              </el-popover>
             </li>
             <li>
-              <a>我的收藏</a>
+              <router-link to="/order">我的订单</router-link>
             </li>
-            <li class="shopCart">
-              <a>
+            <li>
+              <router-link to="/collect">我的收藏</router-link>
+            </li>
+            <li :class="getNum > 0 ? 'shopCart-full' : 'shopCart'">
+              <router-link to="/shoppingCart">
                 <i class="el-icon-shopping-cart-full"></i> 购物车
-                <span class="num">0</span>
-              </a>
+                <span class="num">({{getNum}})</span>
+              </router-link>
             </li>
           </ul>
         </div>
@@ -53,11 +64,18 @@
           </div>
         </el-menu>
       </el-header>
+
+      <!-- 登录 -->
+      <Login />
+
+
     </el-container>
   </div>
 </template>
 
 <script>
+import { mapActions } from "vuex";
+import { mapGetters } from "vuex";
 export default {
   name: 'App',
   components: {
@@ -67,8 +85,73 @@ export default {
       register: false, // 是否显示注册组件
       activeIndex: "", // 导航菜单选中的标签
       search: "", // 搜索内容
+      visible: false // 是否退出登录
     };
   },
+  created() {
+    // 获取浏览器localStorage，判断用户是否已经登录
+    if (localStorage.getItem("user")) {
+      // 如果已经登录，设置vuex登录状态
+      this.setUser(JSON.parse(localStorage.getItem("user")));
+    }
+    /* window.setTimeout(() => {
+      this.$message({
+        duration: 0,
+        showClose: true,
+        message: `
+        <p>如果觉得这个项目还不错，</p>
+        <p style="padding:10px 0">您可以给项目源代码仓库点Star支持一下，谢谢！</p>
+        <p><a href="https://github.com/hai-27/vue-store" target="_blank">Github传送门</a></p>`,
+        dangerouslyUseHTMLString: true,
+        type: "success"
+      });
+    }, 1000 * 60); */
+  },
+  computed: {
+    ...mapGetters(["getUser", "getNum"])
+  },
+  // 获取vuex的登录状态
+  getUser: function(val) {
+    if (val === "") {
+      // 用户没有登录
+      this.setShoppingCart([]);
+    } else {
+      // 用户已经登录,获取该用户的购物车信息
+      this.$axios
+          .post("/api/user/shoppingCart/getShoppingCart", {
+            user_id: val.user_id
+          })
+          .then(res => {
+            if (res.data.code === "001") {
+              // 001 为成功, 更新vuex购物车状态
+              this.setShoppingCart(res.data.shoppingCartData);
+            } else {
+              // 提示失败信息
+              this.notifyError(res.data.msg);
+            }
+          })
+          .catch(err => {
+            return Promise.reject(err);
+          });
+    }
+  },
+  methods:{
+    ...mapActions(["setUser", "setShowLogin", "setShoppingCart"]),
+    // 登录
+    login() {
+      // 点击登录按钮, 通过更改vuex的showLogin值显示登录组件
+      this.setShowLogin(true);
+    },
+    // 退出登录
+    logout() {
+      this.visible = false;
+      // 清空本地登录信息
+      localStorage.setItem("user", "");
+      // 清空vuex登录信息
+      this.setUser("");
+      this.notifySucceed("成功退出登录");
+    },
+  }
 }
 </script>
 
