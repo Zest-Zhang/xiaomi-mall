@@ -26,6 +26,33 @@
           </ul>
         </div>
       </div>
+
+      <!-- 导航菜单 -->
+      <el-header>
+        <el-menu
+            :default-active="activeIndex"
+            class="el-menu-demo"
+            mode="horizontal"
+            active-text-color="skyblue">
+          <div class="logo">
+            <a>
+              <img src="./assets/images/logo.png" alt height="58px"/>
+            </a>
+          </div>
+          <el-menu-item index="/">首页</el-menu-item>
+          <el-menu-item index="/goods">全部商品</el-menu-item>
+          <el-menu-item index="/about">关于我们</el-menu-item>
+          <div class="search">
+            <el-input placeholder="请输入搜索内容" v-model="search">
+              <!-- slot 是 Vue 组件中的一种特殊元素或属性，用于将组件的内容插入到指定的位置。在这个例子中，slot="append" 意味着将 el-button 组件插入到 el-input 组件的尾部 -->
+              <el-button
+                  slot="append"
+                  icon="el-icon-search"
+              ></el-button>
+            </el-input>
+          </div>
+        </el-menu>
+      </el-header>
     </el-container>
   </div>
 </template>
@@ -38,6 +65,8 @@ export default {
   data() {
     return {
       register: false, // 是否显示注册组件
+      activeIndex: "", // 导航菜单选中的标签
+      search: "", // 搜索内容
     };
   },
 }
@@ -112,6 +141,24 @@ a:hover {
   color: white;
 }
 
-
+/* 导航菜单 */
+#app .el-header {
+  padding: 0;
+}
+.el-header .el-menu {
+  max-width: 1225px;
+  margin: 0 auto;
+}
+.el-header .logo {
+  height: 60px;
+  width: 189px;
+  float: left;
+  margin-right: 100px;
+}
+.el-header .search {
+  margin-top: 10px;
+  width: 300px;
+  float: right;
+}
 
 </style>
