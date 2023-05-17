@@ -68,6 +68,15 @@
       <!-- 登录 -->
       <Login />
 
+      <!-- 注册 -->
+      <Register :register="register" @fromChild="isRegister"/>
+
+      <!-- 主要区域容器 -->
+      <el-main>
+        <keep-alive>
+          <router-view></router-view>
+        </keep-alive>
+      </el-main>
 
     </el-container>
   </div>

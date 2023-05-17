@@ -1,4 +1,3 @@
-
 <template>
   <div class="error">
     <div class="main"></div>

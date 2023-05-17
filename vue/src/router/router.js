@@ -6,7 +6,6 @@ import Error from '../components/Error'
 Vue.use(Router)
 
 const routes = [
-
     {
         path: '/error',
         name: 'Error',
