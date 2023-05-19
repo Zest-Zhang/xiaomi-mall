@@ -1,7 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3c22b155-6991-4026-bc35-94de44e6d570" name="变更" comment="" />
+    <list default="true" id="3c22b155-6991-4026-bc35-94de44e6d570" name="变更" comment="">
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/koa/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/accepts/HISTORY.md" beforeDir="false" afterPath="$PROJECT_DIR$/koa/node_modules/accepts/HISTORY.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/accepts/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/koa/node_modules/accepts/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/accepts/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/koa/node_modules/accepts/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/content-disposition/HISTORY.md" beforeDir="false" afterPath="$PROJECT_DIR$/koa/node_modules/content-disposition/HISTORY.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/content-disposition/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/koa/node_modules/content-disposition/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/content-disposition/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/koa/node_modules/content-disposition/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/content-disposition/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/koa/node_modules/content-disposition/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/content-type/HISTORY.md" beforeDir="false" afterPath="$PROJECT_DIR$/koa/node_modules/content-type/HISTORY.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/content-type/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/koa/node_modules/content-type/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/content-type/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/koa/node_modules/content-type/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/content-type/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/koa/node_modules/content-type/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/destroy/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/koa/node_modules/destroy/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/destroy/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/koa/node_modules/destroy/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/destroy/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/koa/node_modules/destroy/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/destroy/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/koa/node_modules/destroy/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/has-symbols/.eslintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/has-symbols/.github/FUNDING.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/has-symbols/.nycrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/has-symbols/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/has-symbols/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/has-symbols/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/has-symbols/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/has-symbols/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/has-symbols/shams.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/has-symbols/test/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/has-symbols/test/shams/core-js.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/has-symbols/test/shams/get-own-property-symbols.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/has-symbols/test/tests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/has-tostringtag/.eslintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/has-tostringtag/.github/FUNDING.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/has-tostringtag/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/has-tostringtag/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/has-tostringtag/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/has-tostringtag/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/has-tostringtag/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/has-tostringtag/shams.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/has-tostringtag/test/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/has-tostringtag/test/shams/core-js.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/has-tostringtag/test/shams/get-own-property-symbols.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/has-tostringtag/test/tests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/http-assert/HISTORY.md" beforeDir="false" afterPath="$PROJECT_DIR$/koa/node_modules/http-assert/HISTORY.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/http-assert/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/koa/node_modules/http-assert/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/http-assert/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/koa/node_modules/http-assert/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/http-assert/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/koa/node_modules/http-assert/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/http-errors/HISTORY.md" beforeDir="false" afterPath="$PROJECT_DIR$/koa/node_modules/http-errors/HISTORY.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/http-errors/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/koa/node_modules/http-errors/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/http-errors/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/koa/node_modules/http-errors/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/http-errors/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/koa/node_modules/http-errors/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/is-generator-function/.eslintignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/is-generator-function/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/koa/node_modules/is-generator-function/.eslintrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/is-generator-function/.nycrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/is-generator-function/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/koa/node_modules/is-generator-function/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/is-generator-function/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/koa/node_modules/is-generator-function/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/is-generator-function/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/koa/node_modules/is-generator-function/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/is-generator-function/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/koa/node_modules/is-generator-function/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/is-generator-function/test/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/koa/node_modules/is-generator-function/test/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/mime-db/HISTORY.md" beforeDir="false" afterPath="$PROJECT_DIR$/koa/node_modules/mime-db/HISTORY.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/mime-db/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/koa/node_modules/mime-db/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/mime-db/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/koa/node_modules/mime-db/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/mime-db/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/koa/node_modules/mime-db/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/mime-db/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/koa/node_modules/mime-db/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/mime-db/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/koa/node_modules/mime-db/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/mime-types/HISTORY.md" beforeDir="false" afterPath="$PROJECT_DIR$/koa/node_modules/mime-types/HISTORY.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/mime-types/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/koa/node_modules/mime-types/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/mime-types/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/koa/node_modules/mime-types/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/negotiator/HISTORY.md" beforeDir="false" afterPath="$PROJECT_DIR$/koa/node_modules/negotiator/HISTORY.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/negotiator/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/koa/node_modules/negotiator/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/negotiator/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/koa/node_modules/negotiator/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/negotiator/lib/language.js" beforeDir="false" afterPath="$PROJECT_DIR$/koa/node_modules/negotiator/lib/language.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/negotiator/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/koa/node_modules/negotiator/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/on-finished/HISTORY.md" beforeDir="false" afterPath="$PROJECT_DIR$/koa/node_modules/on-finished/HISTORY.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/on-finished/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/koa/node_modules/on-finished/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/on-finished/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/koa/node_modules/on-finished/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/on-finished/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/koa/node_modules/on-finished/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/safe-buffer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/koa/node_modules/safe-buffer/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/safe-buffer/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/koa/node_modules/safe-buffer/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/setprototypeof/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/koa/node_modules/setprototypeof/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/setprototypeof/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/koa/node_modules/setprototypeof/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/setprototypeof/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/koa/node_modules/setprototypeof/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/toidentifier/HISTORY.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/toidentifier/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/koa/node_modules/toidentifier/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/toidentifier/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/koa/node_modules/toidentifier/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/toidentifier/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/koa/node_modules/toidentifier/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/ylru/History.md" beforeDir="false" afterPath="$PROJECT_DIR$/koa/node_modules/ylru/History.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/ylru/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/koa/node_modules/ylru/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/ylru/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/koa/node_modules/ylru/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/ylru/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/node_modules/ylru/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/koa/node_modules/ylru/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/koa/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/koa/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/koa/src/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/src/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/koa/src/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/src/router/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/router/router.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,37 +117,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;14.21.3&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;14.18.47&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/zzt/Desktop/xiaomi-mall&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2022.2.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "javascript.nodejs.core.library.configured.version": "14.21.3",
+    "javascript.nodejs.core.library.typings.version": "14.18.47",
+    "last_opened_file_path": "C:/Users/zzt/Desktop/koa2-start-basic",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2022.2.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
-      &quot;directory&quot;,
-      &quot;module&quot;,
-      &quot;repository&quot;
+  "keyToStringList": {
+    "GitStage.ChangesTree.GroupingKeys": [
+      "directory",
+      "module",
+      "repository"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\zzt\Desktop\xiaomi-mall\koa\src\middleware" />
+      <recent name="C:\Users\zzt\Desktop\xiaomi-mall\koa\public" />
+      <recent name="C:\Users\zzt\Desktop\xiaomi-mall\koa\src\controller" />
       <recent name="C:\Users\zzt\Desktop\xiaomi-mall" />
       <recent name="C:\Users\zzt\Desktop\xiaomi_vue\src\components" />
-      <recent name="C:\Users\zzt\Desktop\xiaomi_vue\src\store" />
-      <recent name="C:\Users\zzt\Desktop\xiaomi_vue\src\assets\images" />
-      <recent name="C:\Users\zzt\Desktop\xiaomi_vue\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\zzt\Desktop\xiaomi-mall\koa\src\router\router" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
@@ -68,7 +166,10 @@
       <workItem from="1684312320141" duration="8647000" />
       <workItem from="1684321462301" duration="16000" />
       <workItem from="1684389220811" duration="61000" />
-      <workItem from="1684389318460" duration="1571000" />
+      <workItem from="1684389318460" duration="3084000" />
+      <workItem from="1684468681952" duration="5376000" />
+      <workItem from="1684474269220" duration="74000" />
+      <workItem from="1684474389591" duration="774000" />
     </task>
     <servers />
   </component>
