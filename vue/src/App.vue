@@ -1,7 +1,8 @@
+
 <template>
   <div id="app">
     <el-container>
-      <!-- 顶部导航 -->
+      <!-- 顶部 -->
       <div class="topbar">
         <div class="nav">
           <ul>
@@ -38,7 +39,7 @@
         </div>
       </div>
 
-      <!-- 导航菜单 -->
+      <!-- 头部 -->
       <el-header>
         <el-menu
             :default-active="activeIndex"
@@ -46,7 +47,7 @@
             mode="horizontal"
             active-text-color="skyblue">
           <div class="logo">
-            <a>
+            <a href="/">
               <img src="./assets/images/logo.png" alt height="58px"/>
             </a>
           </div>
@@ -69,9 +70,10 @@
       <Login />
 
       <!-- 注册 -->
+      <!-- 自定义组件，子传父 -->
       <Register :register="register" @fromChild="isRegister"/>
 
-      <!-- 主要区域容器 -->
+      <!-- 主要区域 -->
       <el-main>
         <keep-alive>
           <router-view></router-view>
@@ -103,18 +105,6 @@ export default {
       // 如果已经登录，设置vuex登录状态
       this.setUser(JSON.parse(localStorage.getItem("user")));
     }
-    /* window.setTimeout(() => {
-      this.$message({
-        duration: 0,
-        showClose: true,
-        message: `
-        <p>如果觉得这个项目还不错，</p>
-        <p style="padding:10px 0">您可以给项目源代码仓库点Star支持一下，谢谢！</p>
-        <p><a href="https://github.com/hai-27/vue-store" target="_blank">Github传送门</a></p>`,
-        dangerouslyUseHTMLString: true,
-        type: "success"
-      });
-    }, 1000 * 60); */
   },
   computed: {
     ...mapGetters(["getUser", "getNum"])
@@ -159,6 +149,10 @@ export default {
       // 清空vuex登录信息
       this.setUser("");
       this.notifySucceed("成功退出登录");
+    },
+    // 接收注册子组件传过来的数据
+    isRegister(val) {
+      this.register = val;
     },
   }
 }

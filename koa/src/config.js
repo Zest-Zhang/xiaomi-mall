@@ -1,3 +1,4 @@
+
 /* 全局配置信息 */
 const path = require('path');
 
@@ -10,7 +11,8 @@ module.exports = {
     connectionLimit: 10,
     host: 'localhost',
     user: 'root',
-    password: '',
+    password: '123456',
+    // 连接 storeDB 数据库
     database: 'storeDB'
   }
 }

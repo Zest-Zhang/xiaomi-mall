@@ -3,7 +3,7 @@ const Router = require('koa-router');
 
 let Routers = new Router();
 
-const usersRouter = require('./router/usersRouter');
+const usersRouter = require('./router/userRouter');
 
 Routers.use(usersRouter.routes());
 

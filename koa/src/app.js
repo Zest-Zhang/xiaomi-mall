@@ -1,10 +1,5 @@
-/*
- * @Description: 入口文件
- * @Author: hai-27
- * @Date: 2020-03-14 20:14:45
- * @LastEditors: hai-27
- * @LastEditTime: 2020-04-07 23:39:10
- */
+
+/* 入口文件 */
 const Koa = require('koa');
 const KoaStatic = require('koa-static');
 const KoaBody = require('koa-body');
@@ -50,3 +45,7 @@ app.use(Routers.routes()).use(Routers.allowedMethods());
 app.listen(Port, () => {
   console.log(`服务器启动在${ Port }端口`);
 });
+
+
+
+

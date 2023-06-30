@@ -3,6 +3,7 @@ import App from './App.vue'
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 import Login from './components/Login';
+import Register from './components/Register';
 import store from './store/store'
 import Global from './Global';
 import router from './router/router'
@@ -11,6 +12,7 @@ Vue.use(ElementUI);
 Vue.use(Global);
 
 Vue.component(Login.name, Login);
+Vue.component(Register.name, Register)
 
 Vue.config.productionTip = false
 

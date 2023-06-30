@@ -1,3 +1,4 @@
+
 /* 用户模块控制器 */
 const userDao = require('../models/dao/usersDao');
 const { checkUserInfo, checkUserName } = require('../middleware/checkUserInfo');
@@ -132,7 +133,7 @@ module.exports = {
         msg: '未知错误，注册失败'
       }
     } catch (error) {
-      reject(error);
+      console.log(error);
     }
   }
 };
