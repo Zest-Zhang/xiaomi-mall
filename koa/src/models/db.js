@@ -33,3 +33,8 @@ db.query = function (sql, params) {
 }
 // 导出对象
 module.exports = db;
+
+
+
+
+

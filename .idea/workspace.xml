@@ -35,7 +35,7 @@
     "WebServerToolWindowFactoryState": "false",
     "javascript.nodejs.core.library.configured.version": "14.21.3",
     "javascript.nodejs.core.library.typings.version": "14.18.47",
-    "last_opened_file_path": "C:/Users/zzt/Desktop/vue-store",
+    "last_opened_file_path": "C:/Users/zzt/Desktop/xiaomi-mall",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -88,6 +88,7 @@
       <workItem from="1686193886646" duration="2852000" />
       <workItem from="1686798859362" duration="26000" />
       <workItem from="1688095847773" duration="998000" />
+      <workItem from="1688134161155" duration="263000" />
     </task>
     <servers />
   </component>
