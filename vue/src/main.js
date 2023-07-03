@@ -7,12 +7,16 @@ import Register from './components/Register';
 import store from './store/store'
 import Global from './Global';
 import router from './router/router'
+import List from "@/components/List";
+import Menu from "@/components/Menu";
 
 Vue.use(ElementUI);
 Vue.use(Global);
 
 Vue.component(Login.name, Login);
 Vue.component(Register.name, Register)
+Vue.component(List.name, List)
+Vue.component(Menu.name, Menu)
 
 Vue.config.productionTip = false
 
@@ -55,7 +59,7 @@ Axios.interceptors.response.use(
 );
 
 new Vue({
-  render: h => h(App),
-  store,
-  router,
+    render: h => h(App),
+    store,
+    router,
 }).$mount('#app')
