@@ -41,25 +41,35 @@
 
       <!-- 头部 -->
       <el-header>
+        <!-- 这里使用 router 后，后面 el-menu 开头的标签就不用 router-link 了 -->
         <el-menu
             :default-active="activeIndex"
             class="el-menu-demo"
             mode="horizontal"
-            active-text-color="skyblue">
+            active-text-color="skyblue"
+            router
+        >
           <div class="logo">
-            <a href="/">
-              <img src="./assets/images/logo.png" alt height="58px"/>
-            </a>
+            <router-link to="/">
+              <img src="./assets/images/logo.png" alt/>
+            </router-link>
           </div>
-          <el-menu-item index="/">首页</el-menu-item>
-          <el-menu-item index="/goods">全部商品</el-menu-item>
-          <el-menu-item index="/about">关于我们</el-menu-item>
+          <el-menu-item index="/">
+            首页
+          </el-menu-item>
+          <el-menu-item index="/goods">
+            全部商品
+          </el-menu-item>
+          <el-menu-item index="/about">
+            <router-link to="about">关于我们</router-link>
+          </el-menu-item>
           <div class="search">
             <el-input placeholder="请输入搜索内容" v-model="search">
               <!-- slot 是 Vue 组件中的一种特殊元素或属性，用于将组件的内容插入到指定的位置。在这个例子中，slot="append" 意味着将 el-button 组件插入到 el-input 组件的尾部 -->
               <el-button
                   slot="append"
                   icon="el-icon-search"
+                  @click="searchClick"
               ></el-button>
             </el-input>
           </div>
@@ -119,8 +129,6 @@ import { mapActions } from "vuex";
 import { mapGetters } from "vuex";
 export default {
   name: 'App',
-  components: {
-  },
   data() {
     return {
       register: false, // 是否显示注册组件
@@ -128,6 +136,11 @@ export default {
       search: "", // 搜索内容
       visible: false // 是否退出登录
     };
+  },
+  // activeIndex 根据 $route.path 发生改变，
+  // 解决了点击 全部商品 或 关于我们 再点击 logo 时 el-menu-item bgc 还是天蓝色的 bug
+  beforeUpdate() {
+    this.activeIndex = this.$route.path;
   },
   mounted() {
     document.title = '小米商城 - Xiaomi 13、Redmi K60、MIX FOLD 2，小米电视官方网站';
@@ -142,30 +155,32 @@ export default {
   computed: {
     ...mapGetters(["getUser", "getNum"])
   },
-  // 获取vuex的登录状态
-  getUser: function(val) {
-    if (val === "") {
-      // 用户没有登录
-      this.setShoppingCart([]);
-    } else {
-      // 用户已经登录,获取该用户的购物车信息
-      this.$axios
-          .post("/api/user/shoppingCart/getShoppingCart", {
-            user_id: val.user_id
-          })
-          .then(res => {
-            if (res.data.code === "001") {
-              // 001 为成功, 更新vuex购物车状态
-              this.setShoppingCart(res.data.shoppingCartData);
-            } else {
-              // 提示失败信息
-              this.notifyError(res.data.msg);
-            }
-          })
-          .catch(err => {
-            return Promise.reject(err);
-          });
-    }
+  watch:{
+    // 获取vuex的登录状态
+    getUser(val) {
+      if (val === "") {
+        // 用户没有登录
+        this.setShoppingCart([]);
+      } else {
+        // 用户已经登录,获取该用户的购物车信息
+        this.$axios
+            .post("/api/user/shoppingCart/getShoppingCart", {
+              user_id: val.user_id
+            })
+            .then(res => {
+              if (res.data.code === "001") {
+                // 001 为成功, 更新vuex购物车状态
+                this.setShoppingCart(res.data.shoppingCartData);
+              } else {
+                // 提示失败信息
+                this.notifyError(res.data.msg);
+              }
+            })
+            .catch(err => {
+              return Promise.reject(err);
+            });
+      }
+    },
   },
   methods:{
     ...mapActions(["setUser", "setShowLogin", "setShoppingCart"]),
@@ -187,6 +202,15 @@ export default {
     isRegister(val) {
       this.register = val;
     },
+    // 点击搜索按钮
+    searchClick() {
+      if (this.search !== "") {
+        // 跳转到商品页面,并传递搜索条件
+        this.$router.push({ path: "/goods", query: { search: this.search } });
+        // 清空搜索参数
+        this.search = "";
+      }
+    }
   }
 }
 </script>
@@ -273,6 +297,10 @@ a:hover {
   width: 189px;
   float: left;
   margin-right: 100px;
+}
+.el-header .logo img{
+  height: 56px;
+  width: 140px;
 }
 .el-header .search {
   margin-top: 10px;

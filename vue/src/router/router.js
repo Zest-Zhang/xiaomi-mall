@@ -3,7 +3,8 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Error from '../components/Error'
 import Home from '../pages/Home'
-
+import Goods from "@/pages/Goods";
+import Details from "@/pages/Details";
 
 Vue.use(Router)
 
@@ -22,6 +23,17 @@ const routes = [
         name: 'Error',
         component: Error
     },
+    {
+        path: '/goods',
+        name: 'Goods',
+        component: Goods
+    },
+    {
+        path: '/goods/details',
+        name: 'Details',
+        component: Details
+    },
+
 ]
 
 const router = new Router({

@@ -8,7 +8,6 @@ module.exports = {
     scopes: [
         {name: '初始化'},
         {name: '根组件App.vue'},
-        {name: '路由'},
         {name: 'README'},
         {name: '路由组件'},
         {name: '非路由组件'},

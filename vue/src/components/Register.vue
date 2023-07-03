@@ -119,13 +119,13 @@ export default {
   },
   watch: {
     // 监听父组件传过来的register变量，设置this.isRegister的值
-    register: function(val) {
+    register(val) {
       if (val) {
         this.isRegister = val;
       }
     },
     // 监听this.isRegister变量的值，更新父组件register变量的值
-    isRegister: function(val) {
+    isRegister(val) {
       if (!val) {
         this.$refs["ruleForm"].resetFields();
         this.$emit("fromChild", val);
