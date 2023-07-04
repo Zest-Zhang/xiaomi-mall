@@ -74,7 +74,7 @@ export default {
       }
     },
     deleteShoppingCart (state, id) {
-      // 根据购物车id删除购物车商品
+      // 根据购物车 id 删除购物车商品
       for (let i = 0; i < state.shoppingCart.length; i++) {
         const temp = state.shoppingCart[i];
         if (temp.id == id) {

@@ -7,6 +7,9 @@ import Goods from "@/pages/Goods";
 import Details from "@/pages/Details";
 import ShoppingCart from "@/pages/ShoppingCart";
 import Collect from "@/pages/Collect";
+import ConfirmOrder from "@/pages/ConfirmOrder";
+import Order from "@/pages/Order";
+import About from "@/pages/About";
 
 
 Vue.use(Router)
@@ -51,6 +54,27 @@ const routes = [
         meta: {
             requireAuth: true // 需要验证登录状态
         }
+    },
+    {
+        path: '/confirmOrder',
+        name: 'ConfirmOrder',
+        component: ConfirmOrder,
+        meta: {
+            requireAuth: true // 需要验证登录状态
+        }
+    },
+    {
+        path: '/order',
+        name: 'Order',
+        component: Order,
+        meta: {
+            requireAuth: true // 需要验证登录状态
+        }
+    },
+    {
+        path: '/about',
+        name: 'About',
+        component: About,
     },
 
 ]

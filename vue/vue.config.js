@@ -14,7 +14,18 @@ module.exports = defineConfig({
         }
       }
     }
-  }
+  },
+  // 解决 markdown 组件 bug 的配置
+  configureWebpack: {
+    module: {
+      rules: [
+        {
+          test: /\.md$/,
+          use: 'text-loader'
+        }
+      ]
+    }
+  },
 })
 
 
