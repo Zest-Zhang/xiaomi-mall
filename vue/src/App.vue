@@ -299,8 +299,8 @@ a:hover {
   margin-right: 100px;
 }
 .el-header .logo img{
-  height: 56px;
-  width: 140px;
+  height: 57px;
+  width: 131px;
 }
 .el-header .search {
   margin-top: 10px;
