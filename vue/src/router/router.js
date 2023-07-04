@@ -5,6 +5,9 @@ import Error from '../components/Error'
 import Home from '../pages/Home'
 import Goods from "@/pages/Goods";
 import Details from "@/pages/Details";
+import ShoppingCart from "@/pages/ShoppingCart";
+import Collect from "@/pages/Collect";
+
 
 Vue.use(Router)
 
@@ -32,6 +35,22 @@ const routes = [
         path: '/goods/details',
         name: 'Details',
         component: Details
+    },
+    {
+        path: '/shoppingCart',
+        name: 'ShoppingCart',
+        component: ShoppingCart,
+        meta: {
+            requireAuth: true // 需要验证登录状态
+        }
+    },
+    {
+        path: '/collect',
+        name: 'Collect',
+        component: Collect,
+        meta: {
+            requireAuth: true // 需要验证登录状态
+        }
     },
 
 ]
