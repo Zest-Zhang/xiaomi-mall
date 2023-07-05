@@ -9,6 +9,14 @@ let { Port, staticDir } = require('./config');
 
 let app = new Koa();
 
+// 避免乱码的中间件
+app.use(async (ctx, next) => {
+  // 设置 Content-Type 和字符集编码
+  ctx.set('Content-Type', 'text/plain; charset=utf-8');
+
+  await next();
+});
+
 // 异常处理中间件
 const error = require('./middleware/error');
 app.use(error);

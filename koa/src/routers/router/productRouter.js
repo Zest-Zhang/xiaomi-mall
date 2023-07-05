@@ -8,6 +8,13 @@ let productRouter = new Router();
 productRouter
     .post('/product/getPromoProduct', productController.GetPromoProduct)
     .post('/product/getHotProduct', productController.GetHotProduct)
+    .post('/product/getAllProduct', productController.GetAllProduct)
+    .post('/product/getProductByCategory', productController.GetProductByCategory)
+    .post('/product/getCategory', productController.GetCategory)
+    .post('/product/getProductBySearch', productController.GetProductBySearch)
+    .post('/product/getDetails', productController.GetDetails)
+    .post('/product/getDetailsPicture', productController.GetDetailsPicture)
+
 
 module.exports = productRouter;
 
