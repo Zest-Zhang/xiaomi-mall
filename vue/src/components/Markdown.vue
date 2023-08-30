@@ -7,7 +7,7 @@
 
 <script>
 import VueMarkdown from 'vue-markdown';
-import markdownData from '../../README.md';
+import markdownData from '../../../README.md';
 export default {
   name:'Markdown',
   components: {
@@ -22,5 +22,10 @@ export default {
 </script>
 
 <style scoped>
-
+@import "../assets/github-markdown.css";
+.markdown-body {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 40px;
+}
 </style>

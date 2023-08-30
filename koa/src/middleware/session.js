@@ -1,4 +1,4 @@
-/* session */
+
 let store = {
   storage: {},
   set (key, session) {
@@ -13,6 +13,7 @@ let store = {
 }
 let CONFIG = {
   key: 'koa:session',
+  // seesion 有效期 24h
   maxAge: 86400000,
   autoCommit: true,
   overwrite: true,

@@ -96,7 +96,7 @@ export default {
 .myList ul li {
   z-index: 1;
   float: left;
-  width: 234px;
+  width: 233px;
   height: 280px;
   padding: 10px 0;
   margin: 0 0 14.5px 13.7px;

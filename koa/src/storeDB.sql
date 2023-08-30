@@ -8,10 +8,12 @@ create table users(
   password char (40) not null,
   userPhoneNumber char(11) null
 );
--- ALTER TABLE users MODIFY COLUMN userName char (40) not null unique;
--- ALTER TABLE users MODIFY COLUMN password char (40)  not null;
--- insert into users
--- values(null, 'admin', '123456', '100861001010000');
+-- 插入默认账号、密码，可用与测试登录 api 等
+ALTER TABLE users MODIFY COLUMN userName char (40) not null unique;
+ALTER TABLE users MODIFY COLUMN password char (40)  not null;
+insert into users
+values(null, 'admin', '123456', '100861001010000');
+
 create table carousel(
   carousel_id int primary key auto_increment,
   imgPath char (50) not null,

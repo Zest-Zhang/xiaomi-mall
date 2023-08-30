@@ -12,6 +12,7 @@ module.exports = {
         {name: '路由组件'},
         {name: '非路由组件'},
         {name: '接口数据'},
+        {name: '其他'},
     ],
     messages:{
         type: '请选择提交类型：',
