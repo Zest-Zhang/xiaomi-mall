@@ -1,4 +1,3 @@
-
 # Xiaomi-mall（参考小米商城）
 
 ## 线上地址（电脑访问）
@@ -23,6 +22,12 @@ http://47.96.150.51:3000
 
 ## 功能模块
 
+### 首页
+
+首页主要是对商品的展示，有轮播图展示推荐的商品，分类别对热门商品进行展示。
+
+[![img](https://raw.githubusercontent.com/Zest-Zhang/blog-img/master/home.png)](https://raw.githubusercontent.com/hai-27/vue-store/master/public/screenshots/home.png)
+
 ### 登录
 
 页面使用了element-ui的`Dialog`实现弹出蒙版对话框的效果，`登录`按钮设置在App.vue根组件，通过`vuex`中的`showLogin`状态控制登录框是否显示。
@@ -31,19 +36,21 @@ http://47.96.150.51:3000
 
 用户输入的数据往往是不可靠的，所以本项目前后端都对登录信息进行了校验，前端基于element-ui的表单校验方式，自定义了校验规则进行校验。
 
+[![img](https://raw.githubusercontent.com/Zest-Zhang/blog-img/master/login.png)](https://raw.githubusercontent.com/hai-27/vue-store/master/public/screenshots/login.png)
+
 ### 注册
 
 页面同样使用了element-ui的`Dialog`实现弹出蒙版对话框的效果，`注册`按钮设置在App.vue根组件，通过父子组件传值控制注册框是否显示。
 
 用户输入的数据往往是不可靠的，所以本项目前后端同样都对注册信息进行了校验，前端基于element-ui的表单校验方式，自定义了校验规则进行校验。
 
-### 首页
-
-首页主要是对商品的展示，有轮播图展示推荐的商品，分类别对热门商品进行展示。
+[![img](https://raw.githubusercontent.com/Zest-Zhang/blog-img/master/register.png)](https://raw.githubusercontent.com/hai-27/vue-store/master/public/screenshots/register.png)
 
 ### 全部商品
 
 全部商品页面集成了全部商品展示、商品分类查询，以及根据关键字搜索商品结果展示。
+
+[![img](https://raw.githubusercontent.com/Zest-Zhang/blog-img/master/goods.png)](https://raw.githubusercontent.com/hai-27/vue-store/master/public/screenshots/goods.png)
 
 ### 商品详情页
 
@@ -53,6 +60,8 @@ http://47.96.150.51:3000
 
 购物车采用vuex实现，页面效果参考了小米商城的购物车。
 
+[![img](https://raw.githubusercontent.com/Zest-Zhang/blog-img/master/shoppingCart.png)](https://raw.githubusercontent.com/hai-27/vue-store/master/public/screenshots/shoppingCart.png)
+
 ### 订单结算
 
 用户在购物车选择了准备购买的商品后，点击“去结算”按钮，会来到该页面。 用户在这里选择收货地址，确认订单的相关信息，然后确认购买。
@@ -61,39 +70,10 @@ http://47.96.150.51:3000
 
 用户在商品的详情页，可以通过点击加入 喜欢 按钮，把喜欢的商品加入到收藏列表。
 
+[![img](https://raw.githubusercontent.com/Zest-Zhang/blog-img/master/collect.png)](https://raw.githubusercontent.com/hai-27/vue-store/master/public/screenshots/collect.png)
+
 ### 我的订单
 
 对用户的所有订单进行展示。
 
-## 页面截图
-
-**首页**
-
-[![img](https://raw.githubusercontent.com/Zest-Zhang/blog-img/master/home.png)](https://raw.githubusercontent.com/hai-27/vue-store/master/public/screenshots/home.png)
-
-**全部商品**
-
-[![img](https://raw.githubusercontent.com/Zest-Zhang/blog-img/master/goods.png)](https://raw.githubusercontent.com/hai-27/vue-store/master/public/screenshots/goods.png)
-
-**购物车**
-
-[![img](https://raw.githubusercontent.com/Zest-Zhang/blog-img/master/shoppingCart.png)](https://raw.githubusercontent.com/hai-27/vue-store/master/public/screenshots/shoppingCart.png)
-
-**我的收藏**
-
-[![img](https://raw.githubusercontent.com/Zest-Zhang/blog-img/master/collect.png)](https://raw.githubusercontent.com/hai-27/vue-store/master/public/screenshots/collect.png)
-
-**我的订单**
-
 [![img](https://raw.githubusercontent.com/Zest-Zhang/blog-img/master/order.png)](https://raw.githubusercontent.com/hai-27/vue-store/master/public/screenshots/order.png)
-
-**登录**
-
-[![img](https://raw.githubusercontent.com/Zest-Zhang/blog-img/master/login.png)](https://raw.githubusercontent.com/hai-27/vue-store/master/public/screenshots/login.png)
-
-**注册**
-
-[![img](https://raw.githubusercontent.com/Zest-Zhang/blog-img/master/register.png)](https://raw.githubusercontent.com/hai-27/vue-store/master/public/screenshots/register.png)
-
-
-
